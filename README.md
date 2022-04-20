@@ -4,6 +4,7 @@
 ## 화면 레이아웃
 ![image](https://user-images.githubusercontent.com/97106584/164150312-fe6a2ea5-de95-429c-8232-3902b6802ffc.png)
 
+<br><br>
 ## 기능
 - vue-cli. 뷰 로더
 - header, body, footer별 컴포넌트 기능 구현
