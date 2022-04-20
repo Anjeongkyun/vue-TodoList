@@ -1,6 +1,6 @@
 <template>
   <div class = "inputBox shadow">
-    <input type="text" v-model="newTodoItem" placeholder="Type what you have to do"
+    <input type="text" v-model="newTodoItem" placeholder="해야할 일을 입력해주세요."
     v-on:keyup.enter= "addTodo">
     <span class="addContainer" v-on:click="addTodo">
       <i class = "addBtn fas fa-plus" aria-hidden="true"></i>
@@ -18,11 +18,12 @@
     methods: {
       addTodo() {
         if(this.newTodoItem !== ""){
-            var value = this.newTodoItem &&this.newTodoItem.trim();
-            localStorage.setItem(this.newTodoItem, this.newTodoItem);
+
+            var value = this.newTodoItem && this.newTodoItem.trim();
+            this.$emit('addTodo',value); // value 값 전달
             this.clearInput();
         }else{
-          return alert('input text !')
+          return alert('not input text !')
         }
       },
       clearInput() {
