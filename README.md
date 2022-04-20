@@ -1,6 +1,6 @@
-# TODO List 어플리케이션<hr>
+# TODO List 어플리케이션
 
-## 화면 레이아웃 <hr>
+## 화면 레이아웃
 ![image](https://user-images.githubusercontent.com/97106584/164150312-fe6a2ea5-de95-429c-8232-3902b6802ffc.png)
 
 ## 기능
